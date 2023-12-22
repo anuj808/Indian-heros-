@@ -1,0 +1,330 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+   
+    background: lightblue;
+    height: calc(100% - 100px );
+}
+
+/* navigation menu */
+nav{
+    display: flex;
+align-items: center;
+justify-content: space-between;
+    background: #0f9690;
+    height: calc(100% - 100px );
+    width: 100%;
+    border: 2px solid #0f9690;
+    border-radius: 20px;
+}
+
+nav ul {
+    display: flex;
+    position: relative;
+    gap: 10vh;
+    list-style: none;
+    
+}
+
+nav .navhead {
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px ;
+    font-weight: 800;
+}
+nav .logo img
+{
+    height: 100px ;
+    width: 100px ;
+    border-radius: 50%;
+    margin-left: 6px ;
+}
+
+nav .search input{
+    display: flex;
+    height: 5em;
+    width: 40em;
+    border-radius: 20px ;
+    border: 2px solid #fff;
+}
+ nav .bar {
+    display: none;
+ }
+
+
+
+ /* home  */
+ .container1 {
+    /* display: flex; */
+    margin-top: 20px ;
+    height: 500px ;
+    width: 100%;
+    /* border: 2px solid #0f9690; */
+    /* background: #0f9690; */
+ }
+ .container1 h2 {
+    display: flex;
+    font-size: 2em;
+    margin: 3px auto ;
+    
+ }
+ .container1 .para1{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 22px ;
+    color: #000;
+    font-weight: bold;
+ }
+.container1 .boxes{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+ .container1 .box {
+    height: 350px;
+    width: 320px;
+    border: 2px solid #000;
+    margin-top: 34px;
+    border-radius: 20px ;
+    cursor: pointer;
+ }
+ .container1 .box:hover{
+    transform: scale(1) translateY(-50%);
+    box-shadow: 0 0 10px #000,
+    0 0 20px #000;
+    background-color: #0f9690;
+ }
+ #box1 img  {
+height: 100px ;
+width: 100px ;
+border-radius: 50%;
+margin: 0 100px;
+cursor: pointer;
+ }
+ #box1 h3{
+    display: flex;
+    justify-content: center;
+    font-size: 22px ;
+ }
+  .button{
+display: flex;
+margin: 0 auto;
+height: 40px ;
+width: 110px ;
+border-radius: 20px ;
+cursor: pointer;
+font-size: 15px ;
+color: royalblue;
+font-weight: 800;
+background: linear-gradient(50deg , orange , #fff, green);
+ }
+ .button:hover{
+    transform: scale(1.2) translateY(-50%);
+ }
+
+ #box2 img {
+    height: 100px ;
+width: 100px ;
+border-radius: 50%;
+margin: 0 100px;
+cursor: pointer;
+ }
+ #box2 h3{
+    display: flex;
+    justify-content: center;
+    font-size: 22px ;
+ }
+ 
+ /* box3 */
+ #box3 img {
+    height: 100px ;
+width: 100px ;
+border-radius: 50%;
+margin: 0 100px;
+cursor: pointer;
+ }
+ #box3 h3{
+    display: flex;
+    justify-content: center;
+    font-size: 22px ;
+ }
+ #box4 img {
+    height: 100px ;
+width: 100px ;
+border-radius: 50%;
+margin: 0 100px;
+cursor: pointer;
+ }
+ #box4 h3{
+    display: flex;
+    justify-content: center;
+    font-size: 22px ;
+ }
+ .container1 .moreff img
+ {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    margin-top: 150%;
+    cursor: pointer;
+ }
+ 
+
+ .container1 .moreff img:hover{
+  transform: scale(1.5) ;
+ }
+
+ #container1-more{
+    display: flex;
+    height: 38px;
+    width: 100px;
+    border-radius: 12%;
+    margin:40px ;
+    text-align: center;
+    font-weight: bold;
+    background:linear-gradient(50deg , orange , #fff , green);
+    color: royalblue;
+    cursor: pointer;
+    display: none;
+ }
+
+ @media (max-width:480px ) {
+
+    nav {
+        background: transparent;
+        border: none;
+    }
+    nav ul , .logo , .navhead{
+        display: none;
+       }
+       nav .search input{
+        display: flex;
+        height: 40px ;
+        width: 200px ;
+                           
+        border-radius: 20px;
+       }
+    
+       nav .bar{
+        display: flex;
+        margin-right: 6px ;
+        height: 2rem;
+        cursor: pointer;
+        background-color: #0f9690;
+       }
+
+       
+   .container1{
+    background: transparent;
+    border: none;
+      }
+   
+      #container1-more{
+       display: block;
+      }
+   
+      .container1 .moreff img{
+       display: none;
+      }
+
+ }
+
+ @media (min-width:481px ) and (max-width:767px){
+    
+  nav{
+    background-color: transparent;
+    border: none;
+  }
+  
+nav .navhead {
+    display: none;
+}
+
+nav .search input{
+    display: flex;
+    height: 40px ;
+    width: 400px ;
+                       margin: 3px 50px  ;
+    border-radius: 20px;
+   }
+
+   nav .bar{
+    display: flex;
+    margin-right: 6px ;
+    height: 2rem;
+    cursor: pointer;
+    background-color: #0f9690;
+   }
+
+   .container1 .moreff img{
+    display: block;
+    margin: 50px ;
+
+   }
+
+ }
+
+ @media (min-width:767px ) and (max-width:1024px) {
+
+    nav ul {
+       display: none;
+        
+    }
+
+    nav .search input{
+        display: flex;
+        height: 40px ;
+        width: 400px ;
+                           margin: 3px 50px  ;
+        border-radius: 35px;
+       }
+
+       
+   nav .bar{
+    display: flex;
+    margin-right: 6px ;
+    height: 2rem;
+    cursor: pointer;
+    
+   }
+ }
+
+ @media (min-width:1025px) and (max-width:1280px) {
+
+nav .search input{
+    display: flex;
+    height: 40px ;
+    width: 400px ;
+                       margin: 3px 50px  ;
+    border-radius: 35px;
+   }
+
+   nav ul {
+    display: flex;
+    gap: 20px;
+    margin-right: 20px ;     
+ }
+ }
+
+ @media (min-width:1281px ) {
+
+    nav .search input{
+        display: flex;
+        height: 40px ;
+        width: 400px ;
+                           margin: 3px 50px  ;
+        border-radius: 35px;
+       }
+    
+       nav ul {
+        display: flex;
+        gap: 20px;
+        margin-right: 20px ;     
+     }
+ }
